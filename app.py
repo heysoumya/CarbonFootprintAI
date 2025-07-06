@@ -1,9 +1,9 @@
 import streamlit as st
 
 st.title("🌍 Carbon Footprint Calculator")
-car_miles = st.slider("Weekly car miles", 0, 100)
-flights = st.number_input("Flights this year", 0)
-diet_type = st.selectbox("Diet", ["meat-heavy", "vegetarian", "vegan"])
+car_miles = st.slider("🚗 Weekly car miles", 0, 100)
+flights = st.number_input("✈️ Flights this year", 0)
+diet_type = st.selectbox("Diet", ["🍗 meat-heavy", "🍛 vegetarian", "🌱 vegan"])
 
 if st.button("Calculate"):
     emissions = car_miles*0.4 + flights*90 + \
